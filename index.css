@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+
+
+main {
+  max-width: 70%;
+  border: 5px inset grey;
+  margin: auto;
+  background-color: black;
+}
+.flex-box {
+  display: flex;
+  gap: 5px;
+  flex: wrap;
+  justify-content: stretch;
+  align-items: stretch;
+}
+img {
+  flex: 1 1 auto;
+  height: 350px;
+  max-width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .flex-box {
+    flex-direction: column;
+  }
+  img{
+    max-width: 50%;
+  }
+  
+  .flex-box div {
+    margin: 5px 0;
+  }
+}
